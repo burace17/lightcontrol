@@ -20,8 +20,8 @@
     self.preferredContentSize = CGSizeMake(0, 150);
     // Do any additional setup after loading the view from its nib.
     lightControl = [LightController new];
-    lightURL = @"http://burace17.net:1337/info/1";
-    lightStateURL = @"http://burace17.net:1337/set/1";
+    lightURL = @"http://192.168.1.5:1337/info/1";
+    lightStateURL = @"http://192.168.1.5:1337/set/1";
 }
 
 - (void)didReceiveMemoryWarning {

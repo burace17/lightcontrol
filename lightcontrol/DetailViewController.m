@@ -31,11 +31,11 @@
     }
     self.navigationItem.title = _light;
     if ([_light isEqualToString:@"Nightstand"]) {
-        lightURL = @"http://burace17.net:1337/info/1";
-        lightStateURL = @"http://burace17.net:1337/set/1";
+        lightURL = @"http://192.168.1.5:1337/info/1";
+        lightStateURL = @"192.168.1.5:1337/set/1";
     } else if ([_light isEqualToString:@"My Room"]) {
-        lightURL = @"http://burace17.net:1337/info/2";
-        lightStateURL = @"http://burace17.net:1337/set/2";
+        lightURL = @"http://192.168.1.5:1337/info/2";
+        lightStateURL = @"http://192.168.1.5:1337/set/2";
     }
     
     lightControl = [LightController new];
