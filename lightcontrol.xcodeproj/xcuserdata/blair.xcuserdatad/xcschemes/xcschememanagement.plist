@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LightControlKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>LightControlWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>lightcontrol.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,36 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>750563C71B47248F0085B8FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750563D11B47248F0085B8FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750563F21B4728B80085B8FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>750564091B472A110085B8FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>753732861B475900007F59F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>753732901B475900007F59F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7537C54B1B45E2FD000D0B62</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7505640B1B472A110085B8FE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750563F51B4728B80085B8FE /* NotificationCenter.framework */; };
+		750564111B472A110085B8FE /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750564101B472A110085B8FE /* TodayViewController.m */; };
+		750564131B472A110085B8FE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750564121B472A110085B8FE /* MainInterface.storyboard */; };
+		750564161B472A110085B8FE /* LightControlWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7505640A1B472A110085B8FE /* LightControlWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7537328C1B475900007F59F0 /* LightControlKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7537328B1B475900007F59F0 /* LightControlKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753732921B475900007F59F0 /* LightControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753732871B475900007F59F0 /* LightControlKit.framework */; };
+		7537329B1B475900007F59F0 /* LightControlKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537329A1B475900007F59F0 /* LightControlKitTests.m */; };
+		7537329E1B475900007F59F0 /* LightControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753732871B475900007F59F0 /* LightControlKit.framework */; };
+		7537329F1B475900007F59F0 /* LightControlKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 753732871B475900007F59F0 /* LightControlKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		753732A81B4759BB007F59F0 /* LightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753732A71B4759BB007F59F0 /* LightController.m */; };
 		7537C5521B45E2FD000D0B62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537C5511B45E2FD000D0B62 /* main.m */; };
 		7537C5551B45E2FD000D0B62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537C5541B45E2FD000D0B62 /* AppDelegate.m */; };
 		7537C5581B45E2FD000D0B62 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537C5571B45E2FD000D0B62 /* MasterViewController.m */; };
@@ -15,9 +25,39 @@
 		7537C5601B45E2FD000D0B62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7537C55F1B45E2FD000D0B62 /* Images.xcassets */; };
 		7537C5631B45E2FD000D0B62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7537C5611B45E2FD000D0B62 /* LaunchScreen.xib */; };
 		7537C56F1B45E2FD000D0B62 /* lightcontrolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537C56E1B45E2FD000D0B62 /* lightcontrolTests.m */; };
+		759E0D8E1B4775FD00834521 /* LightControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753732871B475900007F59F0 /* LightControlKit.framework */; };
+		75EEFFF11B475BB9004F879E /* LightController.h in Headers */ = {isa = PBXBuildFile; fileRef = 753732A61B475911007F59F0 /* LightController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		750564141B472A110085B8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7537C5441B45E2FD000D0B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 750564091B472A110085B8FE;
+			remoteInfo = LightControlWidget;
+		};
+		753732931B475900007F59F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7537C5441B45E2FD000D0B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753732861B475900007F59F0;
+			remoteInfo = LightControlKit;
+		};
+		753732951B475900007F59F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7537C5441B45E2FD000D0B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7537C54B1B45E2FD000D0B62;
+			remoteInfo = lightcontrol;
+		};
+		7537329C1B475900007F59F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7537C5441B45E2FD000D0B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753732861B475900007F59F0;
+			remoteInfo = LightControlKit;
+		};
 		7537C5691B45E2FD000D0B62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7537C5441B45E2FD000D0B62 /* Project object */;
@@ -27,7 +67,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		750563E61B47248F0085B8FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7537329F1B475900007F59F0 /* LightControlKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750564051B4728B80085B8FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				750564161B472A110085B8FE /* LightControlWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		750563F51B4728B80085B8FE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7505640A1B472A110085B8FE /* LightControlWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LightControlWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7505640E1B472A110085B8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7505640F1B472A110085B8FE /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		750564101B472A110085B8FE /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		750564121B472A110085B8FE /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		753732871B475900007F59F0 /* LightControlKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightControlKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7537328A1B475900007F59F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7537328B1B475900007F59F0 /* LightControlKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightControlKit.h; sourceTree = "<group>"; };
+		753732911B475900007F59F0 /* LightControlKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightControlKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		753732991B475900007F59F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7537329A1B475900007F59F0 /* LightControlKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightControlKitTests.m; sourceTree = "<group>"; };
+		753732A61B475911007F59F0 /* LightController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightController.h; sourceTree = "<group>"; };
+		753732A71B4759BB007F59F0 /* LightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightController.m; sourceTree = "<group>"; };
 		7537C54C1B45E2FD000D0B62 /* lightcontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lightcontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7537C5501B45E2FD000D0B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7537C5511B45E2FD000D0B62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,10 +125,35 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		750564071B472A110085B8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759E0D8E1B4775FD00834521 /* LightControlKit.framework in Frameworks */,
+				7505640B1B472A110085B8FE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753732831B475900007F59F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7537328E1B475900007F59F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753732921B475900007F59F0 /* LightControlKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7537C5491B45E2FD000D0B62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7537329E1B475900007F59F0 /* LightControlKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +167,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750563F41B4728B80085B8FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				750563F51B4728B80085B8FE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7505640C1B472A110085B8FE /* LightControlWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7505640F1B472A110085B8FE /* TodayViewController.h */,
+				750564101B472A110085B8FE /* TodayViewController.m */,
+				750564121B472A110085B8FE /* MainInterface.storyboard */,
+				7505640D1B472A110085B8FE /* Supporting Files */,
+			);
+			path = LightControlWidget;
+			sourceTree = "<group>";
+		};
+		7505640D1B472A110085B8FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7505640E1B472A110085B8FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		753732881B475900007F59F0 /* LightControlKit */ = {
+			isa = PBXGroup;
+			children = (
+				7537328B1B475900007F59F0 /* LightControlKit.h */,
+				753732891B475900007F59F0 /* Supporting Files */,
+				753732A61B475911007F59F0 /* LightController.h */,
+				753732A71B4759BB007F59F0 /* LightController.m */,
+			);
+			path = LightControlKit;
+			sourceTree = "<group>";
+		};
+		753732891B475900007F59F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7537328A1B475900007F59F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		753732971B475900007F59F0 /* LightControlKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				7537329A1B475900007F59F0 /* LightControlKitTests.m */,
+				753732981B475900007F59F0 /* Supporting Files */,
+			);
+			path = LightControlKitTests;
+			sourceTree = "<group>";
+		};
+		753732981B475900007F59F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				753732991B475900007F59F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7537C5431B45E2FD000D0B62 = {
 			isa = PBXGroup;
 			children = (
 				7537C54E1B45E2FD000D0B62 /* lightcontrol */,
 				7537C56B1B45E2FD000D0B62 /* lightcontrolTests */,
+				7505640C1B472A110085B8FE /* LightControlWidget */,
+				753732881B475900007F59F0 /* LightControlKit */,
+				753732971B475900007F59F0 /* LightControlKitTests */,
+				750563F41B4728B80085B8FE /* Frameworks */,
 				7537C54D1B45E2FD000D0B62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +248,9 @@
 			children = (
 				7537C54C1B45E2FD000D0B62 /* lightcontrol.app */,
 				7537C5681B45E2FD000D0B62 /* lightcontrolTests.xctest */,
+				7505640A1B472A110085B8FE /* LightControlWidget.appex */,
+				753732871B475900007F59F0 /* LightControlKit.framework */,
+				753732911B475900007F59F0 /* LightControlKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +300,73 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		753732841B475900007F59F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7537328C1B475900007F59F0 /* LightControlKit.h in Headers */,
+				75EEFFF11B475BB9004F879E /* LightController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		750564091B472A110085B8FE /* LightControlWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750564171B472A110085B8FE /* Build configuration list for PBXNativeTarget "LightControlWidget" */;
+			buildPhases = (
+				750564061B472A110085B8FE /* Sources */,
+				750564071B472A110085B8FE /* Frameworks */,
+				750564081B472A110085B8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightControlWidget;
+			productName = LightControlWidget;
+			productReference = 7505640A1B472A110085B8FE /* LightControlWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		753732861B475900007F59F0 /* LightControlKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753732A41B475900007F59F0 /* Build configuration list for PBXNativeTarget "LightControlKit" */;
+			buildPhases = (
+				753732821B475900007F59F0 /* Sources */,
+				753732831B475900007F59F0 /* Frameworks */,
+				753732841B475900007F59F0 /* Headers */,
+				753732851B475900007F59F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightControlKit;
+			productName = LightControlKit;
+			productReference = 753732871B475900007F59F0 /* LightControlKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		753732901B475900007F59F0 /* LightControlKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753732A51B475900007F59F0 /* Build configuration list for PBXNativeTarget "LightControlKitTests" */;
+			buildPhases = (
+				7537328D1B475900007F59F0 /* Sources */,
+				7537328E1B475900007F59F0 /* Frameworks */,
+				7537328F1B475900007F59F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				753732941B475900007F59F0 /* PBXTargetDependency */,
+				753732961B475900007F59F0 /* PBXTargetDependency */,
+			);
+			name = LightControlKitTests;
+			productName = LightControlKitTests;
+			productReference = 753732911B475900007F59F0 /* LightControlKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7537C54B1B45E2FD000D0B62 /* lightcontrol */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7537C5721B45E2FD000D0B62 /* Build configuration list for PBXNativeTarget "lightcontrol" */;
@@ -134,10 +374,14 @@
 				7537C5481B45E2FD000D0B62 /* Sources */,
 				7537C5491B45E2FD000D0B62 /* Frameworks */,
 				7537C54A1B45E2FD000D0B62 /* Resources */,
+				750563E61B47248F0085B8FE /* Embed Frameworks */,
+				750564051B4728B80085B8FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				750564151B472A110085B8FE /* PBXTargetDependency */,
+				7537329D1B475900007F59F0 /* PBXTargetDependency */,
 			);
 			name = lightcontrol;
 			productName = lightcontrol;
@@ -171,8 +415,21 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = burace17;
 				TargetAttributes = {
+					750564091B472A110085B8FE = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5DQPS97N39;
+					};
+					753732861B475900007F59F0 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5DQPS97N39;
+					};
+					753732901B475900007F59F0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7537C54B1B45E2FD000D0B62;
+					};
 					7537C54B1B45E2FD000D0B62 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5DQPS97N39;
 					};
 					7537C5671B45E2FD000D0B62 = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,11 +452,36 @@
 			targets = (
 				7537C54B1B45E2FD000D0B62 /* lightcontrol */,
 				7537C5671B45E2FD000D0B62 /* lightcontrolTests */,
+				750564091B472A110085B8FE /* LightControlWidget */,
+				753732861B475900007F59F0 /* LightControlKit */,
+				753732901B475900007F59F0 /* LightControlKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		750564081B472A110085B8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750564131B472A110085B8FE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753732851B475900007F59F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7537328F1B475900007F59F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7537C54A1B45E2FD000D0B62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +502,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		750564061B472A110085B8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750564111B472A110085B8FE /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753732821B475900007F59F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753732A81B4759BB007F59F0 /* LightController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7537328D1B475900007F59F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7537329B1B475900007F59F0 /* LightControlKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7537C5481B45E2FD000D0B62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +548,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		750564151B472A110085B8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 750564091B472A110085B8FE /* LightControlWidget */;
+			targetProxy = 750564141B472A110085B8FE /* PBXContainerItemProxy */;
+		};
+		753732941B475900007F59F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753732861B475900007F59F0 /* LightControlKit */;
+			targetProxy = 753732931B475900007F59F0 /* PBXContainerItemProxy */;
+		};
+		753732961B475900007F59F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7537C54B1B45E2FD000D0B62 /* lightcontrol */;
+			targetProxy = 753732951B475900007F59F0 /* PBXContainerItemProxy */;
+		};
+		7537329D1B475900007F59F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753732861B475900007F59F0 /* LightControlKit */;
+			targetProxy = 7537329C1B475900007F59F0 /* PBXContainerItemProxy */;
+		};
 		7537C56A1B45E2FD000D0B62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7537C54B1B45E2FD000D0B62 /* lightcontrol */;
@@ -269,6 +595,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		750564181B472A110085B8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightControlWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		750564191B472A110085B8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LightControlWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		753732A01B475900007F59F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightControlKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		753732A11B475900007F59F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LightControlKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		753732A21B475900007F59F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightControlKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lightcontrol.app/lightcontrol";
+			};
+			name = Debug;
+		};
+		753732A31B475900007F59F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightControlKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lightcontrol.app/lightcontrol";
+			};
+			name = Release;
+		};
 		7537C5701B45E2FD000D0B62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,9 +785,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = lightcontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -365,9 +798,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = lightcontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -408,6 +844,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		750564171B472A110085B8FE /* Build configuration list for PBXNativeTarget "LightControlWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750564181B472A110085B8FE /* Debug */,
+				750564191B472A110085B8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753732A41B475900007F59F0 /* Build configuration list for PBXNativeTarget "LightControlKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753732A01B475900007F59F0 /* Debug */,
+				753732A11B475900007F59F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753732A51B475900007F59F0 /* Build configuration list for PBXNativeTarget "LightControlKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753732A21B475900007F59F0 /* Debug */,
+				753732A31B475900007F59F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7537C5471B45E2FD000D0B62 /* Build configuration list for PBXProject "lightcontrol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -424,6 +887,7 @@
 				7537C5741B45E2FD000D0B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7537C5751B45E2FD000D0B62 /* Build configuration list for PBXNativeTarget "lightcontrolTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +896,7 @@
 				7537C5771B45E2FD000D0B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

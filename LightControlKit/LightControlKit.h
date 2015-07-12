@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char LightControlKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LightControlKit/PublicHeader.h>
 
-
+#import <LightControlKit/LightController.h>

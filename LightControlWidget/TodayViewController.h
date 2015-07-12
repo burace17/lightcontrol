@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LightControlKit/LightControlKit.h>
 
-@interface TodayViewController : UIViewController
-
+@interface TodayViewController : UIViewController {
+    LightController *lightControl;
+    NSString *lightURL;
+    NSString *lightStateURL;
+    
+    IBOutlet UISwitch *powerSwitch;
+}
+- (IBAction)powerSwitchChanged:(id)sender;
 @end
